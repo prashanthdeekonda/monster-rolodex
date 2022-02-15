@@ -22,12 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <CardList>
-          {
-             this.state.monsters.map(monster => <h1>{monster.name}</h1>)
-          }
-          </CardList>
-       
+          <CardList monsters={this.state.monsters} />
         </header>
       </div>
     );
